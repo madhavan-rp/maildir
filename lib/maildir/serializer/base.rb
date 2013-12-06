@@ -33,7 +33,7 @@ class Maildir
 
       protected
       def write(data, path)
-        File.open(path, "w") {|file| file.write(data)}
+        File.open(path, "wb") {|file| file.write(data)}
       end
     end
   end
